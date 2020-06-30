@@ -1,0 +1,62 @@
+.nav-header    
+    padding: 10px 15px 0
+    background-color: $base-grey
+    .container:
+        padding: none
+        margin-left: auto
+        margin-right: auto
+
+.brand
+    float: left
+    color: $white
+    font-size: $font-logo
+    text-transform: uppercase
+    font: $font-family-ubuntu
+    .rollover-stay
+        color: $base-teal
+
+.nav-menu
+    float: right
+    margin: 5px 0 0
+    .nav-menu-list
+        font-size: $font-large
+        font: $font-base
+        margin: 0
+        padding: 0
+        list-style: none
+        .nav-item
+            display: inline-block
+            margin: 0
+            vertical-align: top
+            .nav-a
+                display: block 
+                padding: 5px 10px
+                text-decoration: none
+                color: $white
+                border: 1px solid transparent
+                &:hover
+                    color: $base-orange
+            .rollover-stay
+                color: $base-teal
+            
+.dropdownLink 
+    display: none
+
+
+// Media Queries
+@media (max-width: $breakpoint-header) 
+.dropdownLink
+    display: block
+    position: absolute
+    top: 35px
+    right: 50px
+    font-size: $font-xlg
+    text-decoration: none
+    color: $base-teal
+    &:hover
+        color: $base-orange
+.nav-menu-list-responsive .nav-item
+    display: none
+
+
+
