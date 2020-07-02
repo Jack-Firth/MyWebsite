@@ -1,7 +1,8 @@
 .nav-header    
     padding: 10px 15px 0
     background-color: $base-grey
-    .container:
+    width: 100%
+    .container
         padding: none
         margin-left: auto
         margin-right: auto
@@ -36,27 +37,20 @@
                 border: 1px solid transparent
                 &:hover
                     color: $base-orange
+                @media screen and (max-width: $breakpoint-header)
+                    display: none
             .rollover-stay
                 color: $base-teal
-            
-.dropdownLink 
-    display: none
-
-
-// Media Queries
-@media (max-width: $breakpoint-header) 
-.dropdownLink
-    display: block
-    position: absolute
-    top: 35px
-    right: 50px
-    font-size: $font-xlg
-    text-decoration: none
-    color: $base-teal
-    &:hover
-        color: $base-orange
-.nav-menu-list-responsive .nav-item
-    display: none
-
-
+        .dropdownLink
+            display: none
+            text-decoration: none
+            @media screen and ( max-width: $breakpoint-header)
+                display: inline-block
+                font-size: $font-xlg
+                text-decoration: none
+                a
+                    color: $white
+                    &:hover
+                        color: $base-orange
+                        text-decoration: none
 

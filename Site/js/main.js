@@ -6,3 +6,18 @@ function toggleDropDown() {
     navbarToggle.className = "nav-menu-list";
   }
 }
+
+function stickyNavBar() {
+  let navigationBar = document.getElementById("navigation-bar");
+  let stickyBar = navigationBar.offsetTop;
+  if (window.pageYOffset >= stickyBar) {
+    navigationBar.classList.add("-sticky");
+  } else {
+    navigationBar.classList.remove("-sticky");
+  }
+  console.log("sticky");
+}
+
+window.onscroll = function () {
+  stickyNavBar();
+};
