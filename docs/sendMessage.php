@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL)
-ini_set('Error Reporting', E_ALL)
+ini_set('error_reporting', E_ALL)
 
 $name = $_POST['contactForm-name'];
 $mailFrom = $_POST['contactForm-email'];
