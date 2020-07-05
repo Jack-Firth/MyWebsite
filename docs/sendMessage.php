@@ -1,5 +1,4 @@
 <?php
-
 error_reporting(E_ALL)
 ini_set('Error Reporting', E_ALL)
 
@@ -17,7 +16,6 @@ if ($_POST['submit']) {
         echo '<p>Your message was sent! </p>';
     } else {
         echo '<p>Something went wrong, please try again';
-    } 
-    
+    }  
 }  
 ?>
