@@ -11,7 +11,7 @@ $mailTo = 'me@jackfirth.com';
 $headers = "From: ".$mailFrom;
 $txt = "You have received an e-mail from ".$name. ".\n\n".$message";
 
-if ($_POST['submit']) {
+if ($_POST['formSubmit']) {
     if (mail ($mailTo, $subject, $txt, $headers)) {
         echo '<p>Your message was sent! </p>';
     } else {
