@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit']))  {
+
     $name = $_POST['contact-name'];
     $subject = "New Website Contact Submission";
     $mailFrom = $_POST['contact-email'];
@@ -12,6 +12,6 @@ if (isset($_POST['submit']))  {
     
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.html?mailsent");
-}  
+  
 
 ?>
