@@ -1,10 +1,9 @@
 <?php
-
-
-    $name = $_POST['contact-name'];
+if (isset($_POST['submit']))  {
+    $name = $_POST['contactForm-name'];
     $subject = "New Website Contact Submission";
-    $mailFrom = $_POST['contact-email'];
-    $message = $_POST['contact-message'];
+    $mailFrom = $_POST['contactForm-email'];
+    $message = $_POST['contactForm-message'];
     
     $mailTo = "me@jackfirth.com";
     $headers = "From: ".$mailFrom;
@@ -12,6 +11,5 @@
     
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.html?mailsent");
-  
-
+}  
 ?>
