@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function toggleDropDown() {
   let navbarToggle = document.getElementById("navbar-toggle");
   if (navbarToggle.className === "nav-menu-list") {
@@ -22,13 +21,3 @@ function stickyNavBar() {
 window.onscroll = function () {
   stickyNavBar();
 };
-=======
-function toggleDropDown() {
-  let navbarToggle = document.getElementById("navbar-toggle");
-  if (navbarToggle.className === "nav-menu-list") {
-    navbarToggle.className += "-responsive";
-  } else {
-    navbarToggle.className = "nav-menu-list";
-  }
-}
->>>>>>> 42f51d612c1685374be93ab64169cc2f1a587df8

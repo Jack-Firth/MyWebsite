@@ -198,18 +198,21 @@
         <div class="col-10">
           <div class="contactMe-wrapper">
             <h1 class="wrapper-title">Contact<span class="orangewrapper-title-formatting">Me</span></h1>    
-            <form class="contactMe-form">
+            <form class="contactMe-form" method="post" action="../contact-form-handler.php">
               <div class="form-group">
-                <input type="text" class="form-control" id="contactForm-name" placeholder="Name">
+                <input type="text" class="form-control" name="name" id="contactForm-name" placeholder="Name" max-length="100" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="contactForm-email" placeholder="Email">
+                <input type="email" class="form-control" name="email" id="contactForm-email" placeholder="Email" max-length="150" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" id="contactForm-message" rows="6" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" id="contactForm-message" rows="6" placeholder="Message" max-length="6000" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" name="submit" class="btn btn-primary">Send</button>
               </div>
             </form>
-          </div>
+          </>
         </div>
       <div class="col-1"></div>
     </div>

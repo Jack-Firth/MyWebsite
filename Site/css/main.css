@@ -300,4 +300,12 @@ ol {
       border: none;
       font-family: "Ubuntu", sans-serif; }
 
+.btn-primary {
+  background-color: #333333;
+  color: #ffffff;
+  border: none; }
+  .btn-primary:hover {
+    color: #e73601;
+    background-color: #333333; }
+
 /*# sourceMappingURL=main.css.map */
