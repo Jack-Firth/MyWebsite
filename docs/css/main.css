@@ -308,4 +308,11 @@ ol {
     color: #e73601;
     background-color: #333333; }
 
+.main-footer {
+  margin-top: 20px;
+  text-align: center; }
+  .main-footer a {
+    text-decoration: none;
+    color: #4b735c; }
+
 /*# sourceMappingURL=main.css.map */
