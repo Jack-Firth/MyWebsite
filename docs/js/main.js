@@ -21,3 +21,9 @@ function stickyNavBar() {
 window.onscroll = function () {
   stickyNavBar();
 };
+
+function sendMessage() {
+  let name = getElementById(contactForm - name);
+  let email = getElementById(contactForm - email);
+  let message = getElementById(contactForm - message);
+}

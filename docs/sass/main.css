@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+body {
+  background-color: #edf6f9;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer {
+  background-color: #edf6f9;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: baseline;
+  width: 100%;
+  height: 100vh;
+  background-color: #edf6f9;
+  color: #006D77;
+  text-align: center;
+}
+
+.blue-section-container {
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  background-color: #83c5be;
+}
+
+.light-section-container {
+  margin-top: 3vh;
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  background-color: #edf6f9;
+}
+
+h1.wrapper-title {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 75vw;
+  font-size: 2rem;
+}
+
+.bluesection {
+  background-color: #83c5be;
+}
+
+.lightsection {
+  backdrop-color: #edf6f9;
+}
+
+.blue-section-wrapper {
+  background-color: #83c5be;
+  color: #edf6f9;
+  padding: 5% 0;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.light-section-wrapper {
+  background-color: #edf6f9;
+  color: #006D77;
+  padding: 5% 10%;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-me-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  justify-content: space-between;
+}
+
+.socials-wrapper {
+  margin-top: 5vh;
+}
+
+.nav-header {
+  padding: 10px 15px 0;
+  background-color: #edf6f9;
+  width: 100%;
+}
+.nav-header .container {
+  padding: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand {
+  float: left;
+  color: #006D77 !important;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font: "Ubuntu", sans-serif;
+}
+.navbar-brand:hover {
+  color: #e73601 !important;
+}
+
+.navbar {
+  background-color: rgba(72, 67, 73, 0.1215686275);
+}
+.navbar .navbar-nav {
+  font-size: 1.25rem;
+  font: 1rem;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 5px 10px;
+  color: #006D77 !important;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #e73601 !important;
+}
+
+.advance-arrow {
+  margin-top: 20vh;
+  color: #83c5be;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.advance-arrow:hover {
+  color: #e73601;
+  text-decoration: none;
+}
+
+.headshot {
+  border-radius: 50%;
+  border: 1px solid #484349;
+  margin-bottom: 5vh;
+}
+
+.about-me {
+  color: #484349;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: rgba(0, 109, 119, 0.9);
+}
+
+.modal-header {
+  border-bottom: 1px solid #83c5be;
+}
+
+.modal-footer {
+  border-top: 1px solid #83c5be;
+}
+
+.btn-secondary {
+  background-color: #edf6f9;
+}
+.btn-secondary:hover {
+  color: #e73601;
+}
+
+.btn {
+  transition: none;
+}
+.btn:hover {
+  transition: none;
+}
+
+.timeline-wrapper .events {
+  width: 2160px;
+  transform: translateX(-20px);
+}
+
+.timeline {
+  position: absolute;
+  height: 10%;
+  width: 70%;
+  background-color: #83c5be;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: scaleX(0.95489);
+}
+
+ol {
+  list-style: none;
+}
+
+.contactMe-form {
+  padding: 0 50px;
+}
+.contactMe-form .form-group {
+  border-radius: 5px;
+}
+.contactMe-form .form-group .form-control {
+  background-color: rgba(237, 246, 249, 0.7);
+  color: #ffffff;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn-primary {
+  background-color: #edf6f9;
+  color: #ffffff;
+  border: none;
+}
+.btn-primary:hover {
+  color: #e73601;
+  background-color: #edf6f9;
+}
+
+.main-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.main-footer a {
+  text-decoration: none;
+  color: #83c5be;
+}/*# sourceMappingURL=main.css.map */
