@@ -1,4 +1,8 @@
-h1.wrapper-title
+.title-wrapper
+    display: flex
+    justify-content: center
+
+h1.container-title
     display: inline-block
     text-transform: uppercase
     text-align: center
@@ -11,32 +15,27 @@ h1.wrapper-title
 .lightsection
     backdrop-color: $base-major
 
+.section-wrapper
+    padding: 5% 0
+    height: 80%
+    display: flex
+    flex-direction: column
+    align-items: center
+
 .blue-section-wrapper
     background-color: $base-accent3
     color: $base-major
-    padding: 5% 0
-    width: 100%
-    height: 80vh
-    display: flex
-    flex-direction: column
-    text-align: center
-    align-items: center
 
 .light-section-wrapper
     background-color: $base-major
     color: $base-accent1
-    padding: 5% 10%
-    width: 100%
-    height: 80vh
-    display: flex
-    flex-direction: column
-    text-align: center
 
 .about-me-wrapper
     display: flex
     flex-wrap: wrap
     margin-top: 5vh
     justify-content: space-between
+    align-items: center
 
 .socials-wrapper
     margin-top: 5vh
